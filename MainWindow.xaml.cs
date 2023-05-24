@@ -144,5 +144,11 @@ namespace TextEditor
             temp = rtbText.Selection.GetPropertyValue(Inline.FontSizeProperty);
             cmbFontSize.SelectedItem = temp; // 依據選取文字的字體大小，設定字體大小下拉選單的數字
         }
+
+        private void rtbText_LostFocus(object sender, RoutedEventArgs e)
+        {
+            // 避免選擇的文字因為按下修改格式的選項與按鍵，造成取消選擇
+            e.Handled = true;
+        }
     }
     }

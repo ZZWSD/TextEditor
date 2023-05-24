@@ -14,7 +14,7 @@
         <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="34" Margin="518,13,0,0" VerticalAlignment="Top" Width="33" FontWeight="Bold" FontFamily="Microsoft Sans Serif" Click="btnUnderline_Click"/>
         <ComboBox x:Name="cmbFontFamily" HorizontalAlignment="Left" Height="19" Margin="189,28,0,0" VerticalAlignment="Top" Width="135" SelectionChanged="cmbFontFamily_SelectionChanged"/>
         <ComboBox x:Name="cmbFontSize" HorizontalAlignment="Left" Height="19" Margin="329,28,0,0" VerticalAlignment="Top" Width="83" SelectionChanged="cmbFontSize_SelectionChanged"/>
-        <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="363" Margin="20,52,0,0" VerticalAlignment="Top" Width="770" TextChanged="rtbText_TextChanged">
+        <RichTextBox x:Name="rtbText" HorizontalAlignment="Left" Height="363" Margin="20,52,0,0" VerticalAlignment="Top" Width="770" TextChanged="rtbText_TextChanged" LostFocus="rtbText_LostFocus">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="RichTextBox"/>
