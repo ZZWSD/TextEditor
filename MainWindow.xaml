@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:TextEditor"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="#FF7EF3C0">
+        <Button x:Name="btnOpen" Content="開啟檔案" HorizontalAlignment="Left" Height="37" Margin="20,10,0,0" VerticalAlignment="Top" Width="78"/>
+        <Button x:Name="btnSave" Content="存檔" HorizontalAlignment="Left" Height="37" Margin="103,10,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Height="34" Margin="442,13,0,0" VerticalAlignment="Top" Width="33" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <Button x:Name="btnItalic" Content="I" HorizontalAlignment="Left" Height="34" Margin="480,13,0,0" VerticalAlignment="Top" Width="33" FontWeight="Bold" FontStyle="Italic" FontFamily="Microsoft Sans Serif"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Height="34" Margin="518,13,0,0" VerticalAlignment="Top" Width="33" FontWeight="Bold" FontFamily="Microsoft Sans Serif"/>
+        <ComboBox HorizontalAlignment="Left" Height="19" Margin="189,28,0,0" VerticalAlignment="Top" Width="135"/>
+        <ComboBox HorizontalAlignment="Left" Height="19" Margin="329,28,0,0" VerticalAlignment="Top" Width="83"/>
+        <TextBox x:Name="rtbText" HorizontalAlignment="Left" Height="362" Margin="20,52,0,0" TextWrapping="Wrap" Text="RichTextBox" VerticalAlignment="Top" Width="770"/>
+
     </Grid>
 </Window>
